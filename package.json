@@ -1,0 +1,38 @@
+{
+  "name": "is-index-clean",
+  "version": "0.0.0",
+  "description": "check if a git repository has uncommitted changes",
+  "license": "MIT",
+  "repository": "jmversteeg/is-index-clean",
+  "author": {
+    "name": "JM Versteeg",
+    "email": "janmerijnversteeg@gmail.com",
+    "url": "github.com/jmversteeg"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "pretest": "eslint index.js && eslint test.js",
+    "test": "mocha test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [],
+  "dependencies": {
+    "bluebird": "^3.1.5",
+    "execa": "^0.2.2"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-as-promised": "^5.2.0",
+    "coveralls": "^2.11.6",
+    "del": "^2.2.0",
+    "eslint": "^1.10.3",
+    "istanbul": "^0.4.1",
+    "mkdirp": "^0.5.1",
+    "mocha": "^2.3.4",
+    "pify": "^2.3.0"
+  }
+}
