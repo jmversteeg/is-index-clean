@@ -23,6 +23,8 @@ describe('isIndexClean', () => {
                 process.chdir(path.join(__dirname, 'test'));
                 return Promise.mapSeries([
                     'git init',
+                    'git config user.email "someone@example.com"',
+                    'git config user.name "Foo Bar"',
                     'touch firstfile',
                     'git add -A',
                     'git commit -m "initial commit"'
