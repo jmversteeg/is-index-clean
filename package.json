@@ -1,6 +1,6 @@
 {
   "name": "is-index-clean",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "check if a git repository has uncommitted changes",
   "license": "MIT",
   "repository": "jmversteeg/is-index-clean",
