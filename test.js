@@ -41,7 +41,7 @@ describe('isIndexClean', () => {
             .then(() => isIndexClean().should.be.rejected);
     });
 
-    it('should detect stage changes', () => {
+    it('should detect staged changes', () => {
         return execa.shell('touch somefile')
             .then(() => execa.shell('git add -A'))
             .then(() => isIndexClean().should.be.rejected);
